@@ -11,6 +11,10 @@ html, body {
   overflow-x: hidden;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .App-header {
   width: 100%;
   position: fixed;
@@ -905,14 +909,16 @@ html, body {
   text-align: right;
 }
 
-.terms-conditions-link p{
-  color: #58cf98; /* Match the green theme */
-  text-decoration: none;
+.terms-conditions-link {
+  color: #58cf98 !important; /* Set the link color to your green theme */
+  text-decoration: underline; /* Ensure the link is underlined */
+  text-decoration-color: #58cf98;
   transition: color 0.3s ease;
 }
 
-.terms-conditions-link p:hover {
-  color: #000; /* Darken color on hover */
+.terms-conditions-link:hover {
+  color: #45b87d !important; /* Optional: Slightly darker green on hover */
+  text-decoration-color: #45b87d;
 }
 
 .hamburger {
@@ -1286,7 +1292,7 @@ html, body {
   }
 
   .stat-number {
-    font-size: 1.5rem; /* Smaller font size for the numbers */
+    font-size: 1.25rem; /* Smaller font size for the numbers */
   }
 
   .stat-item p {

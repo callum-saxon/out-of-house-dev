@@ -117,11 +117,16 @@ function App() {
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
-    const section = document.querySelector(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    if (window.location.pathname !== "/") {
+      window.location.href = `${sectionId.slice(1)}`; // Navigate to the homepage and target the section
+    } else {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
+
 
   const toggleService = (index) => {
     setOpenServiceIndex(openServiceIndex === index ? null : index);
@@ -221,7 +226,12 @@ function App() {
                     <Link to="/schedule-call">
                       <button className="primary-btn"><span>Schedule a Call</span></button>
                     </Link>
-                    <button className="secondary-btn"><span>Digital Services</span></button>
+                    <button
+                      className="secondary-btn"
+                      onClick={(e) => handleNavClick(e, '#services')}
+                    >
+                      <span>Digital Services</span>
+                    </button>                  
                   </div>
                 </section>
 

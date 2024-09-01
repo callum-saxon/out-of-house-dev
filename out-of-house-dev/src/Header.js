@@ -35,7 +35,7 @@ const Header = ({ activeSection, handleNavClick }) => {
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li>
             <Link
-              to="/#home"
+              to=" "
               className={activeSection === 'home' ? 'active' : ''}
               onClick={(e) => {
                 handleNavClick(e, '#home');
@@ -47,7 +47,7 @@ const Header = ({ activeSection, handleNavClick }) => {
           </li>
           <li>
             <Link
-              to="/#services"
+              to=" "
               className={activeSection === 'services' ? 'active' : ''}
               onClick={(e) => {
                 handleNavClick(e, '#services');
@@ -59,7 +59,7 @@ const Header = ({ activeSection, handleNavClick }) => {
           </li>
           <li>
             <Link
-              to="/#benefits"
+              to=" "
               className={activeSection === 'benefits' ? 'active' : ''}
               onClick={(e) => {
                 handleNavClick(e, '#benefits');
@@ -71,7 +71,7 @@ const Header = ({ activeSection, handleNavClick }) => {
           </li>
           <li>
             <Link
-              to="/#pricing"
+              to=" "
               className={activeSection === 'pricing' ? 'active' : ''}
               onClick={(e) => {
                 handleNavClick(e, '#pricing');
