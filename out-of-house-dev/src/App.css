@@ -38,7 +38,7 @@ html, body {
 }
 
 .App-nav {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center; /* Center the navigation links */
   align-items: center;
