@@ -27,7 +27,7 @@ function App() {
     const observerOptions = {
       root: null, // Use the viewport as the root
       rootMargin: '0px',
-      threshold: 0.4 // Trigger when at least 60% of the section is visible
+      threshold: 0.1 // Trigger when at least 60% of the section is visible
     };
   
     const handleIntersect = (entries, observer) => {
@@ -63,7 +63,7 @@ function App() {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.2, // Adjust threshold as needed
+      threshold: 0.1, // Adjust threshold as needed
     };
 
     const handleIntersect = (entries, observer) => {
@@ -88,7 +88,7 @@ function App() {
     const observerOptions = {
       root: null, // Use the viewport as the root
       rootMargin: '0px',
-      threshold: 0.8 // Trigger when at least 50% of the element is visible
+      threshold: 0.2 // Trigger when at least 50% of the element is visible
     };
 
     const handleIntersect = (entries, observer) => {
@@ -217,11 +217,11 @@ function App() {
                     </span>
                   </h1>
                   <p className='fade-in'>Without the hassle of building and managing an in-house team.</p>
-                  <div className="buttons">
+                  <div className="buttons fade-in">
                     <Link to="/schedule-call">
-                      <button className="primary-btn fade-in"><span>Schedule a Call</span></button>
+                      <button className="primary-btn"><span>Schedule a Call</span></button>
                     </Link>
-                    <button className="secondary-btn fade-in"><span>Digital Services</span></button>
+                    <button className="secondary-btn"><span>Digital Services</span></button>
                   </div>
                 </section>
 
@@ -418,7 +418,7 @@ function App() {
                         <div className="contact-subtitle">Schedule a call to discuss your digital vision</div>
                       </div>
                     </div>
-                    <div className="contact-us-details fade-in">
+                    <div className="contact-us-details">
                       <div className="company-info">
                         <h3 className="company-name">&#123;out-of-house.dev&#125;</h3>
                         <p className="company-slogan">Bringing Your Digital Vision to Life,<br />Without the In-House Hassle.</p>

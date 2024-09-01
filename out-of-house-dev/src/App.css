@@ -1236,15 +1236,14 @@ html, body {
   }
 
   .main-content {
-    text-align: left;
     line-height: 2.5rem;
     margin: 300px 0px 190px;
   }
   
 
   .main-content h1 {
-    font-size: 1.5rem; /* Ensure the font size is appropriate for mobile */
-    margin-top: -50px;
+    font-size: 1.6rem; /* Ensure the font size is appropriate for mobile */
+    margin-top: -100px;
   }
 
   .main-content h1 .gradient-text {
@@ -1252,8 +1251,7 @@ html, body {
   }
 
   .main-content p {
-    font-size: 1rem;
-    max-width: 80%;
+    font-size: 1.2rem;
     margin-top: 30px;
   }
 
@@ -1327,6 +1325,12 @@ html, body {
     font-size: 1.5rem; /* Smaller toggle sign */
     right: 10px; /* Adjust position */
     top: 15px; /* Adjust position */
+  }
+
+  .benefit-item img {
+    width: 125px; /* Adjust size as needed */
+    height: auto;
+    margin-top: auto; /* Push the image to the bottom */
   }
 
   .benefits-grid {
@@ -1421,27 +1425,15 @@ html, body {
   }
 
   .contact-highlighted {
-    width: 100%; /* Adjust the highlighted section width if necessary */
-    margin: 0 auto; /* Center the highlighted section */
+    display: none;
   }
-
+  
   .contact-highlighted .contact-btn {
-    transform: translate(-50%, 225%); /* Adjust button position if needed */
-    font-size: 1rem; /* Adjust subtitle size */
+    display: none;
   }
 
   .contact-subtitle {
-    grid-column: 1 / -1; /* Span the entire width */
-    text-align: center; /* Center align the subtitle */
-  }
-
-  .contact-subtitle {
-    font-size: 1.5rem; /* Adjust subtitle size */
-    margin-top: 20px; /* Adjust margin for mobile */
-    margin-left: 0;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    text-align: center; /* Center the subtitle */
+    display: none;
   }
 
   .contact-grid {
@@ -1454,6 +1446,7 @@ html, body {
   .company-name {
     font-size: 2rem;
     line-height: 5%;
+    margin-top: -80px;
   }
 
   .company-slogan{
@@ -1463,7 +1456,7 @@ html, body {
   .contact-us-details {
     flex-direction: column;
     gap: 20px;
-    padding: 100px 0px;
+    padding: 0px 0px;
   }
 
   .company-details p:not(:first-child) {
