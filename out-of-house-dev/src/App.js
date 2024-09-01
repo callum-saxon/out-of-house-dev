@@ -23,97 +23,6 @@ function App() {
 
   useEffect(() => {
     const sectionIds = ['home', 'services', 'benefits', 'pricing', 'faq', 'contact-us'];
-    
-    const observerOptions = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px',
-      threshold: 0.4 // Trigger when at least 60% of the section is visible
-    };
-  
-    const handleIntersect = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-  
-    const observer = new IntersectionObserver(handleIntersect, observerOptions);
-  
-    sectionIds.forEach(id => {
-      const section = document.getElementById(id);
-      if (section) {
-        observer.observe(section);
-      }
-    });
-  
-    return () => {
-      sectionIds.forEach(id => {
-        const section = document.getElementById(id);
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
-    };
-  }, []);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in');
-    
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.2, // Adjust threshold as needed
-    };
-
-    const handleIntersect = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, observerOptions);
-
-    sections.forEach(section => observer.observe(section));
-
-    return () => {
-      sections.forEach(section => observer.unobserve(section));
-    };
-  }, []);
-
-  useEffect(() => {
-    const observerOptions = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px',
-      threshold: 0.8 // Trigger when at least 50% of the element is visible
-    };
-
-    const handleIntersect = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('highlight');
-        } else {
-          entry.target.classList.remove('highlight');
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, observerOptions);
-
-    const benefitItems = document.querySelectorAll('.benefit-item');
-    const pricingCards = document.querySelectorAll('.pricing-card');
-
-    benefitItems.forEach(item => observer.observe(item));
-    pricingCards.forEach(card => observer.observe(card));
-
-    return () => {
-      benefitItems.forEach(item => observer.unobserve(item));
-      pricingCards.forEach(card => observer.unobserve(card));
-    };
-  }, []);
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
@@ -201,31 +110,31 @@ function App() {
             exact
             element={
               <div>
-                <section id="home" className="main-content fade-in">
+                <section id="home" className="main-content">
                   <h1>
                     Transform your digital vision from <br/>
-                    <span className="highlighted fade-in"> 
+                    <span className="highlighted"> 
                       <span className="gradient-text">
                         <span role="img" aria-label="thoughtbubble">💭</span>concept
                       </span>
                     </span> 
                     {" "}to{" "}
-                    <span className="highlighted fade-in">
+                    <span className="highlighted">
                       <span className="gradient-text">
                         <span role="img" aria-label="tick">🗸</span>completion.
                       </span>
                     </span>
                   </h1>
-                  <p className='fade-in'>Without the hassle of building and managing an in-house team.</p>
+                  <p>Without the hassle of building and managing an in-house team.</p>
                   <div className="buttons">
                     <Link to="/schedule-call">
-                      <button className="primary-btn fade-in"><span>Schedule a Call</span></button>
+                      <button className="primary-btn"><span>Schedule a Call</span></button>
                     </Link>
-                    <button className="secondary-btn fade-in"><span>Digital Services</span></button>
+                    <button className="secondary-btn"><span>Digital Services</span></button>
                   </div>
                 </section>
 
-                <section className="stats-bar fade-in">
+                <section className="stats-bar">
                   <div className="stats-container">
                     <div className="stat-item">
                       <div className="stat-number">&lt; 24</div>
@@ -246,7 +155,7 @@ function App() {
                   </div>
                 </section>
 
-                <section id="services" className="services-section fade-in">
+                <section id="services" className="services-section">
                   <h2>O u r &nbsp; S e r v i c e s</h2>
                   <h3>
                     Digital solutions that will <span className="gradient-text">exceed your original vision</span>
@@ -268,7 +177,7 @@ function App() {
                   </div>
                 </section>
 
-                <section id="benefits" className="benefits-section fade-in">
+                <section id="benefits" className="benefits-section">
                   <h2>B e n e f i t s</h2>
                   <h3>
                     Why Choose <span className="gradient-text">Out-of-House?</span>
@@ -322,7 +231,7 @@ function App() {
                   </div>
                 </section>
 
-                <section id="pricing" className="pricing-section fade-in">
+                <section id="pricing" className="pricing-section">
                   <h2>P r i c i n g</h2>
                   <h3>Make your digital vision <span className="gradient-text">happen today.</span></h3>
                   <div className="pricing-options">
@@ -385,7 +294,7 @@ function App() {
                   </div>
                 </section>
 
-                <section id="faq" className="faq-section fade-in">
+                <section id="faq" className="faq-section">
                   <h2>F r e q u e n t l y &nbsp; A s k e d &nbsp; Q u e s t i o n s</h2>
                   <div className="faq-list">
                     {faqContent.map((faq, index) => (
@@ -407,7 +316,7 @@ function App() {
                 <section id="contact-us" className="contact-us-section">
                   <div className="contact-us-container">
                     <div className="contact-us-header">
-                      <div className="contact-grid fade-in">
+                      <div className="contact-grid">
                         <div className="contact-title">Contact</div>
                         <span className="contact-highlighted">
                           <Link to="/schedule-call">
@@ -418,7 +327,7 @@ function App() {
                         <div className="contact-subtitle">Schedule a call to discuss your digital vision</div>
                       </div>
                     </div>
-                    <div className="contact-us-details fade-in">
+                    <div className="contact-us-details">
                       <div className="company-info">
                         <h3 className="company-name">&#123;out-of-house.dev&#125;</h3>
                         <p className="company-slogan">Bringing Your Digital Vision to Life,<br />Without the In-House Hassle.</p>
