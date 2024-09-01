@@ -1286,17 +1286,17 @@ html, body {
   }
 
   .stat-item {
-    margin: 15px;
-    margin-top: 10px;
-    height: 80px;
+    margin: 0px;
+    margin-top: 0px;
+    height: 40px;
   }
 
   .stat-number {
-    font-size: 1.25rem; /* Smaller font size for the numbers */
+    font-size: 1rem; /* Smaller font size for the numbers */
   }
 
   .stat-item p {
-    font-size: 0.75rem; /* Smaller font size for the description */
+    font-size: 0.5rem; /* Smaller font size for the description */
   }
 
   .services-list {
