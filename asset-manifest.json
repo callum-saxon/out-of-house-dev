@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/out-of-house-dev/static/css/main.4a434a2f.css",
-    "main.js": "/out-of-house-dev/static/js/main.691e3e20.js",
-    "static/js/453.014247c8.chunk.js": "/out-of-house-dev/static/js/453.014247c8.chunk.js",
-    "static/media/out-of-house-logo.png": "/out-of-house-dev/static/media/out-of-house-logo.c0eb1d2d63856187c491.png",
-    "static/media/undraw_stability_ball_b-4-ia.svg": "/out-of-house-dev/static/media/undraw_stability_ball_b-4-ia.939070b1deffd7ca317fdf8668ab6173.svg",
-    "static/media/undraw_stand_out_-1-oag.svg": "/out-of-house-dev/static/media/undraw_stand_out_-1-oag.7affca298068b56f5f7130b9695633a2.svg",
-    "static/media/undraw_online_banking_re_kwqh.svg": "/out-of-house-dev/static/media/undraw_online_banking_re_kwqh.00fabb8142ac1669bcb898b223e6e608.svg",
-    "static/media/undraw_time_management_re_tk5w.svg": "/out-of-house-dev/static/media/undraw_time_management_re_tk5w.79470c8bb5238344c142f49df459a0aa.svg",
-    "static/media/undraw_speed_test_re_pe1f.svg": "/out-of-house-dev/static/media/undraw_speed_test_re_pe1f.a8e5b017f57295fd7a10be38c1c6e4ff.svg",
-    "static/media/undraw_on_the_way_re_swjt.svg": "/out-of-house-dev/static/media/undraw_on_the_way_re_swjt.913ff33cded5d7faf7ef3cd70af460a9.svg",
-    "static/media/undraw_cancel_re_pkdm.svg": "/out-of-house-dev/static/media/undraw_cancel_re_pkdm.cdb259296c0b227fa88ee93344e3b309.svg",
-    "static/media/undraw_credit_card_payments_re_qboh.svg": "/out-of-house-dev/static/media/undraw_credit_card_payments_re_qboh.2e0e5b886db46ff231fe470c4cffffa7.svg",
-    "static/media/undraw_accept_request_re_d81h.svg": "/out-of-house-dev/static/media/undraw_accept_request_re_d81h.2abaee8ded9e6cd3d5f3803883961f42.svg",
-    "index.html": "/out-of-house-dev/index.html",
-    "main.4a434a2f.css.map": "/out-of-house-dev/static/css/main.4a434a2f.css.map",
-    "main.691e3e20.js.map": "/out-of-house-dev/static/js/main.691e3e20.js.map",
-    "453.014247c8.chunk.js.map": "/out-of-house-dev/static/js/453.014247c8.chunk.js.map"
+    "main.css": "/static/css/main.4a434a2f.css",
+    "main.js": "/static/js/main.1cea8e2b.js",
+    "static/js/453.014247c8.chunk.js": "/static/js/453.014247c8.chunk.js",
+    "static/media/out-of-house-logo.png": "/static/media/out-of-house-logo.c0eb1d2d63856187c491.png",
+    "static/media/undraw_stability_ball_b-4-ia.svg": "/static/media/undraw_stability_ball_b-4-ia.939070b1deffd7ca317fdf8668ab6173.svg",
+    "static/media/undraw_stand_out_-1-oag.svg": "/static/media/undraw_stand_out_-1-oag.7affca298068b56f5f7130b9695633a2.svg",
+    "static/media/undraw_online_banking_re_kwqh.svg": "/static/media/undraw_online_banking_re_kwqh.00fabb8142ac1669bcb898b223e6e608.svg",
+    "static/media/undraw_time_management_re_tk5w.svg": "/static/media/undraw_time_management_re_tk5w.79470c8bb5238344c142f49df459a0aa.svg",
+    "static/media/undraw_speed_test_re_pe1f.svg": "/static/media/undraw_speed_test_re_pe1f.a8e5b017f57295fd7a10be38c1c6e4ff.svg",
+    "static/media/undraw_on_the_way_re_swjt.svg": "/static/media/undraw_on_the_way_re_swjt.913ff33cded5d7faf7ef3cd70af460a9.svg",
+    "static/media/undraw_cancel_re_pkdm.svg": "/static/media/undraw_cancel_re_pkdm.cdb259296c0b227fa88ee93344e3b309.svg",
+    "static/media/undraw_credit_card_payments_re_qboh.svg": "/static/media/undraw_credit_card_payments_re_qboh.2e0e5b886db46ff231fe470c4cffffa7.svg",
+    "static/media/undraw_accept_request_re_d81h.svg": "/static/media/undraw_accept_request_re_d81h.2abaee8ded9e6cd3d5f3803883961f42.svg",
+    "index.html": "/index.html",
+    "main.4a434a2f.css.map": "/static/css/main.4a434a2f.css.map",
+    "main.1cea8e2b.js.map": "/static/js/main.1cea8e2b.js.map",
+    "453.014247c8.chunk.js.map": "/static/js/453.014247c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a434a2f.css",
-    "static/js/main.691e3e20.js"
+    "static/js/main.1cea8e2b.js"
   ]
 }
