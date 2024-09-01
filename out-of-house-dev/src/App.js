@@ -227,19 +227,19 @@ function App() {
 
                 <section className="stats-bar fade-in">
                   <div className="stats-container">
-                    <div className="stat-item fade-in">
+                    <div className="stat-item">
                       <div className="stat-number">&lt; 24</div>
                       <p>Hour Onboarding</p>
                     </div>
-                    <div className="stat-item fade-in">
+                    <div className="stat-item">
                       <div className="stat-number">100%</div>
                       <p>Compliance with Global Data Security Standards</p>
                     </div>
-                    <div className="stat-item fade-in">
+                    <div className="stat-item">
                       <div className="stat-number">99.9%</div>
                       <p>Uptime Guarantee</p>
                     </div>
-                    <div className="stat-item fade-in">
+                    <div className="stat-item">
                       <div className="stat-number">24/7</div>
                       <p>Support Availability</p>
                     </div>
@@ -404,7 +404,7 @@ function App() {
                   </div>
                 </section>
 
-                <section id="contact-us" className="contact-us-section fade-in">
+                <section id="contact-us" className="contact-us-section">
                   <div className="contact-us-container">
                     <div className="contact-us-header">
                       <div className="contact-grid fade-in">
