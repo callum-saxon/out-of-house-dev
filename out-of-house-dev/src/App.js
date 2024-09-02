@@ -3,7 +3,6 @@ import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './Header';
 import TermsAndConditions from './TermsAndConditions';
 import PrivacyPolicy from './PrivacyPolicy';
-import ScheduleCall from './ScheduleCall';
 import './App.css';
 
 import SvgCoWorking from './images/undraw_online_banking_re_kwqh.svg';
@@ -223,9 +222,9 @@ function App() {
                   </h1>
                   <p className='fade-in'>Without the hassle of building and managing an in-house team.</p>
                   <div className="buttons fade-in">
-                    <Link to="/schedule-call">
-                      <button className="primary-btn"><span>Schedule a Call</span></button>
-                    </Link>
+                  <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
+                    <button className="primary-btn"><span>Schedule a Call</span></button>
+                  </a>
                     <button
                       className="secondary-btn"
                       onClick={(e) => handleNavClick(e, '#services')}
@@ -343,12 +342,12 @@ function App() {
                         <p>Custom solutions tailored to your business needs.</p>
                       </div>
                       <p className="price-point">Custom Pricing</p>
-                      <Link to="/schedule-call">
+                      <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
                         <button><span>Get Started</span></button>
-                      </Link>
-                      <Link to="/schedule-call">
+                      </a>
+                      <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
                         <span>Book a call</span>
-                      </Link>
+                      </a>
                       <div className="pricing-details">
                         <p><strong>What's included:</strong></p>
                         <ul>
@@ -371,12 +370,12 @@ function App() {
                         <p>Perfect for maintaining and enhancing your existing solutions.</p>
                       </div>
                       <p className="price-point">£3,000 - £9,000/m</p>
-                      <Link to="/schedule-call">
+                      <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
                         <button><span>Get Started</span></button>
-                      </Link>
-                      <Link to="/schedule-call">
+                      </a>
+                      <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
                         <span>Book a call</span>
-                      </Link>
+                      </a>
                       <div className="pricing-details">
                         <p><strong>What's included:</strong></p>
                         <ul>
@@ -420,9 +419,9 @@ function App() {
                       <div className="contact-grid fade-in">
                         <div className="contact-title">Contact</div>
                         <span className="contact-highlighted">
-                          <Link to="/schedule-call">
-                            <button className="contact-btn">Contact Us</button>
-                          </Link>
+                        <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
+                          <button className="contact-btn">Contact Us</button>
+                        </a>
                           <div className="contact-gradient-text">us</div>
                         </span>
                         <div className="contact-subtitle">Schedule a call to discuss your digital vision</div>
@@ -464,7 +463,6 @@ function App() {
               </div>
             }
           />
-          <Route path="/schedule-call" element={<ScheduleCall />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>

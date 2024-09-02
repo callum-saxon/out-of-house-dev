@@ -96,9 +96,9 @@ const Header = ({ activeSection, handleNavClick }) => {
         </ul>
         {/* Render Contact Us button separately for desktop */}
         {!isMobile && (
-          <Link to="/schedule-call" className="desktop-contact">
-            <button className="contact-btn"><span>Contact Us</span></button>
-          </Link>
+          <a href="https://cal.com/out-of-house.dev" target="_blank" rel="noopener noreferrer">
+            <span className="contact-btn">Contact Us</span>
+          </a>
         )}
       </nav>
     </header>
