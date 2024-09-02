@@ -84,13 +84,15 @@ const Header = ({ activeSection, handleNavClick }) => {
           {/* Only render "Contact Us" in the dropdown for mobile */}
           {isMobile && (
             <li>
-              <Link
-                to="/schedule-call"
-                className={location.pathname === '/schedule-call' ? 'active' : ''}
+              <a
+                href="https://cal.com/out-of-house.dev"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)} // Close the menu after click
+                className={location.pathname === '/schedule-call' ? 'active' : ''}
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
           )}
         </ul>
